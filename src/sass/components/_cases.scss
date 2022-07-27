@@ -1,6 +1,9 @@
 .cases{
   color: var(--secondary-text-color);
   padding: 40px 20px;
+  @media screen and (min-width: 1360px) {
+    padding: 80px 28px;
+  }
 }
 
 .cases__subtitle{
@@ -8,6 +11,10 @@
   line-height: 1.66;
   text-align: center;
   padding-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.65;
+  }
 }
 
 .cases__title{
@@ -23,16 +30,32 @@
   line-height: 1.6;
   text-align: center;
   padding-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }
 
 .cases__list{
   display: grid;
-  grid-row-gap: 20px;
+  grid-row-gap: 8px;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 18px;
+  }
+  @media screen and (min-width: 768px) {
+    grid-column-gap: 20px;
+    grid-row-gap: 24px;
+  }
 }
 
 .cases__item{
+  // display: block;
+  // width: 280px;
+  // height: 176px;
+}
+
+.cases__img{
   display: block;
-  width: 280px;
-  height: 176px;
-  border: 1px solid;
+  width: 100%;
 }

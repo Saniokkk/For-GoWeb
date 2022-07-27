@@ -3,17 +3,40 @@
   // color: var(--primary-text-color);
 }
 
+.form__container{
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1.04fr;
+  }
+
+  @media screen and (min-width: 1360px) {
+    min-width: 1360px;
+  }
+}
 
 .form__img {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
+
+  @media screen and (min-width: 768px) {
+    height: 100%;
+  }
 }
 
 .form__description {
   padding: 40px 30px;
   color: #FFFFFF;
+
+  @media screen and (min-width: 768px) {
+    padding-right: 53px;
+    padding-left: 32px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding: 80px 28px 80px 20px;
+  }
 }
 
 .form__subtitle {
@@ -52,11 +75,25 @@
   border-radius: 5px;
   color: inherit;
   background: var(--primary-color);
+  @include transition(background-color);
+  &:hover {
+    background-color: #28a746db;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.38;
+  }
 }
 
 .input-name,
 .input-email {
   margin-bottom: 32px;
   height: 40px;
-}
 
+}
+.input-email{
+  @media screen and (min-width: 1360px) {
+  margin-bottom: 60px;
+  }
+}
