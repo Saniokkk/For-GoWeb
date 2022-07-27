@@ -46,5 +46,11 @@ color: #FFFFFF;
   border: 1px solid #FFFFFF;
   border-radius: 5px;
   color: inherit;
-  background: inherit;
+  background-color: inherit;
+  @include transition(background-color);
+  @include transition(color);
+  &:hover {
+    background-color: #FFFFFF;
+    color: var(--primary-color)
+  }
 }

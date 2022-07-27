@@ -44,4 +44,11 @@
   border-radius: 5px;
   color: inherit;
   background: inherit;
+  @include transition(background-color);
+  @include transition(color);
+
+  &:hover {
+    background-color: #FFFFFF;
+    color: var(--secondary-color);
+  }
 }
