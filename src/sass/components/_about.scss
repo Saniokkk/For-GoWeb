@@ -1,0 +1,50 @@
+.about {
+  background-color: var(--primary-color);
+  }
+
+// .wrapper{
+//   width: 320px;
+//   height: auto;
+// }
+
+.about__img{
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.about__description{
+padding: 40px 30px;
+color: #FFFFFF;
+}
+
+.about__subtitle{
+  font-size: 18px;
+  line-height: 1.66;
+  margin-bottom: 8px;
+}
+
+.about__title{
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+  margin-bottom: 24px;
+}
+
+.about__text{
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.about__btn {
+  display: block;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 10px 36px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  color: inherit;
+  background: inherit;
+}
