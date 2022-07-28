@@ -99,11 +99,15 @@
   display: block;
   position: relative;
   background-color: inherit;
+  box-shadow: 0;
   @include transition(transform, 500ms);
-  &:hover {
+  &:hover,
+  &:focus {
     transform: scale(1.03, 1.03);
+    box-shadow: 0 0 8px 1px;
   }
-  &:hover .team__card-overlay {
+  &:hover .team__card-overlay,
+  &:focus .team__card-overlay {
       opacity: 1;
       background-color: rgba(0, 0, 0, .5);
     }
@@ -122,8 +126,6 @@
     align-items: center;
 }
 
-// .team-social {}
-
 .team-social__list {
   display: flex;
   margin: 0 auto 8px;
@@ -139,27 +141,18 @@
   .team-social__link:focus & {
     fill: rgba(255, 255, 255, 0.5);
   }
+
 }
 
 .team-social__item + .team-social__item {
     margin-left: 25px;
 }
 
-// a {
-//   display: block;
-//   position: relative;
-// }
-
-// .mask {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   background: rgba(0, 0, 0, .5);
-//   opacity: 0;
-// }
-
-a:hover:after {
-  opacity: 1;
+.team-social__link:focus .team__wrapper{
+    transform: scale(1.03, 1.03);
+    box-shadow: 0 0 8px 1px;
+  }
+.team-social__link:focus .team__card-overlay{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .5);
 }
