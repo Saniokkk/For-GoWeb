@@ -59,12 +59,12 @@
   margin-bottom: 24px;
 }
 
-.contact__call{
+.form{
   display: flex;
   flex-direction: column;
 }
 
-.contact__btn {
+.form__submit-btn {
   display: block;
   font-size: 16px;
   line-height: 1.37;
@@ -86,14 +86,59 @@
   }
 }
 
-.input-name,
-.input-email {
-  margin-bottom: 32px;
-  height: 40px;
+.form__item {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
 
+.form__input,
+.form__input {
+  width: 100%;
+  height: 40px;
+  padding: 5px 15px;
+  margin-bottom: 32px;
 }
 .input-email{
+  
   @media screen and (min-width: 1360px) {
   margin-bottom: 60px;
   }
 }
+
+.form__label {
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  right: 15px;
+  top: 0;
+  color: #000;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 40px;
+  transition: .3s;
+}
+
+.form__input:focus~.form__label,
+.form__input:not(:placeholder-shown):valid~.form__label {
+  top: -36px;
+  font-size: 14px;
+}
+
+.worning{
+  font-size: 12px;
+  display: flex;
+  position: absolute;
+  bottom: 8px;
+  color:#eb5757;
+  @media screen and (min-width: 1360px) {
+    bottom: 30px;
+  }
+}
+
+.icon-worning{
+  width: 16px;
+  height: 16px;
+}
+

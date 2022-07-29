@@ -7,9 +7,8 @@ const navigate = document.querySelector('.header-nav__list');
 const rootElement = document.documentElement;
 
 function getCoords(elem) {
-  let box = elem.getBoundingClientRect();
-
-  return box.top + window.pageYOffset
+  const box = elem.getBoundingClientRect();  
+  return box.top + window.pageYOffset;
 }
 
 function scrollToTop(coord) {
@@ -39,7 +38,7 @@ const handleClick = (event) => {
     case 'contact':
       scrollToTop(getCoords(contactSection));
       break;
-  
+      
     default:
       break;
   }

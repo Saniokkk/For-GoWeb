@@ -7,12 +7,22 @@
         </picture>
         <div class="contact__description">
             <h2 class="contact__title">Request Callback</h2>
-            <form class="contact__call" action="">
-                <label for="name">Enter your name</label>
-                <input class="input-name" placeholder="Enter your name" type="text" name="" id="name">
-                <label for="email">Enter email*</label>
-                <input class="input-email" placeholder="Enter email*" type="email" name="" id="email">
-                <button type="submit" class="contact__btn">Send</button>
+            <form class="form action">
+                <div class="form__item">
+                    <input class="form__input input-name" placeholder=" " name="name" type="text" id="user-name">
+                    <label class="form__label" for="user-name">Enter your name</label>
+                </div>
+                <div class="form__item">
+                    <input class="form__input input-email" placeholder=" " name="email" type="text" id="user-email" >
+                    <label class="form__label" for="user-email">Enter email*</label>
+                    <p class="worning visually-hidden">
+                        <svg class="icon-worning" width="7" height="10">
+                            <use href="./images/icons.svg#icon-worning"></use>
+                        </svg>
+                        <span class="text-worning">This is required field</span>
+                    </p>
+                </div>
+                <button type="submit" class="form__submit-btn">Send</button>
             </form>
         </div>
     </div>
