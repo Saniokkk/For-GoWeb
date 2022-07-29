@@ -109,7 +109,7 @@
   &:hover .team__card-overlay,
   &:focus .team__card-overlay {
       opacity: 1;
-      background-color: rgba(0, 0, 0, .5);
+      background-color: rgba(0, 0, 0, 0.6);
     }
 }
 
@@ -139,7 +139,7 @@
 
   .team-social__link:hover &,
   .team-social__link:focus & {
-    fill: rgba(255, 255, 255, 0.5);
+    fill: rgba(255, 255, 255, 0.8);
   }
 
 }
@@ -154,5 +154,5 @@
   }
 .team-social__link:focus .team__card-overlay{
     opacity: 1;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
