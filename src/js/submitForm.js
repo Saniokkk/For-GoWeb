@@ -31,7 +31,7 @@ function onFormSubmit(event) {
         textWorning.textContent = `Your email ${email}  invalid, it must contain @`;
         worning.classList.remove('visually-hidden');
       } else {
-        toggleModal();
+        openModal();
         worning.classList.add('visually-hidden');
         event.currentTarget.reset();
       }
