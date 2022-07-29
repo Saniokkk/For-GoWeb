@@ -72,11 +72,11 @@
   color: inherit;
   background-color: inherit;
   @include transition(background-color);
-  @include transition(color);
+  @include transition(color, 500ms);
 
   &:hover {
     background-color: #FFFFFF;
-    color: var(--primary-color)
+    color: var(--primary-color);
   }
   
   @media screen and (min-width: 768px) {

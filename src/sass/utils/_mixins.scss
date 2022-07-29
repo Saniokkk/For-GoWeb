@@ -1,7 +1,7 @@
-@mixin text($fw, $fs, $lh) {
-  font-weight: $fw;
+@mixin text($fs, $lh, $fw: 400) {
   font-size: $fs;
   line-height: $lh;
+  font-weight: $fw;
 }
 @mixin transition($pr, $du: 250ms, $tf: cubic-bezier(0.4, 0, 0.2, 1)) {
   transition-property: $pr;
