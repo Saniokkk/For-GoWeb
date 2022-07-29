@@ -1,2 +1,0 @@
-
-// const rootElement = document.documentElement;

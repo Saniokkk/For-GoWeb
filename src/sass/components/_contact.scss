@@ -1,9 +1,9 @@
-.form {
+.contact {
   background-color: #F4F4F4;
   // color: var(--primary-text-color);
 }
 
-.form__container{
+.contact__container{
   @media screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1.04fr;
@@ -14,7 +14,7 @@
   }
 }
 
-.form__img {
+.contact__img {
   display: block;
   width: 100%;
   height: auto;
@@ -25,7 +25,7 @@
   }
 }
 
-.form__description {
+.contact__description {
   padding: 40px 30px;
   color: #FFFFFF;
 
@@ -39,13 +39,13 @@
   }
 }
 
-.form__subtitle {
+.contact__subtitle {
   font-size: 18px;
   line-height: 1.66;
   margin-bottom: 8px;
 }
 
-.form__title {
+.contact__title {
   font-weight: 300;
   font-size: 38px;
   line-height: 1.26;
@@ -53,18 +53,18 @@
   color: var(--secondary-text-color);
 }
 
-.form__text {
+.contact__text {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 24px;
 }
 
-.form__call{
+.contact__call{
   display: flex;
   flex-direction: column;
 }
 
-.form__btn {
+.contact__btn {
   display: block;
   font-size: 16px;
   line-height: 1.37;
