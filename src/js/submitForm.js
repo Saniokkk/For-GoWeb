@@ -1,13 +1,7 @@
-// const backdrop = document.querySelector('.backdrop');
-// const closeModal = document.querySelector('.close-modal')
 import { openModal } from "./modal.js";
 const form = document.querySelector('.form');
 const worning = document.querySelector('.worning');
 const textWorning = document.querySelector('.text-worning')
-
-// const toggleModal = () => {
-//   backdrop.classList.toggle('modal__is-hidden');
-// }
 
 function isValidEmail(email) { 
   return /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/.test(email); 
@@ -37,10 +31,5 @@ function onFormSubmit(event) {
       }
     }   
 }
-// const handleCloseModal = () => {
-//   toggleModal()
-// }
 
 form.addEventListener('submit', onFormSubmit)
-
-// closeModal.addEventListener('click', handleCloseModal);
