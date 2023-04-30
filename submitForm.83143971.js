@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"GBd9":[function(require,module,exports) {
 "use strict";var e=require("./modal.js");const t=document.querySelector(".form"),n=document.querySelector(".worning"),r=document.querySelector(".text-worning");function a(e){return/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/.test(e)}function i(t){if(t.preventDefault(),""===t.currentTarget.elements.email.value)r.textContent="This is required field",n.classList.remove("visually-hidden");else{const{name:{value:i},email:{value:s}}=t.currentTarget.elements;a(s)?((0,e.openModal)(),n.classList.add("visually-hidden"),t.currentTarget.reset()):(r.textContent=`Your email ${s}  invalid, it must contain @`,n.classList.remove("visually-hidden"))}}t.addEventListener("submit",i);
 },{"./modal.js":"RSqK"}]},{},["GBd9"], null)
-//# sourceMappingURL=/For-GoWeb/submitForm.83143971.js.map
+//# sourceMappingURL=/submitForm.83143971.js.map
